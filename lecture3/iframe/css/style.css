@@ -1,0 +1,76 @@
+body {
+  margin: 100px auto;
+  background-color: #fff;
+  height: auto;
+}
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+.devices {
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+}
+.phone {
+  position: absolute;
+  top: 120px;
+}
+.desktop {
+  position: absolute;
+}
+.desktop-iframe-container {
+  width: 800px;
+  height: 665px;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/121761/iMac-Flat-Mockup_1000px.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 800px;
+  position: absolute;
+  float: left;
+  z-index: 100;
+}
+#iframe-desktop {
+  position: absolute;
+  width: 734px;
+  height: 414px;
+  top: 50px;
+  left: 33px;
+  background: #fff;
+  z-index: 100;
+}
+.phone-iframe-container {
+  width: 300px;
+  height: 594px;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/121761/Nexus_5_Mockup_300px.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 999;
+  position: absolute;
+  transform: scale(0.6);
+}
+#iframe-phone {
+  position: relative;
+  width: 269px;
+  height: 480px;
+  top: 50px;
+  left: 14px;
+  background: #fff;
+  z-index: 999;
+}
+
+@media (max-width:900px){
+  .wrapper {
+    transform: scale(0.8, 0.8);
+  }
+}
+@media (max-width:700px){
+  .wrapper {
+    transform: scale(0.6, 0.6);
+  }
+}
+@media (max-width:500px){
+  .wrapper {
+    transform: scale(0.4, 0.4);
+  }
+}

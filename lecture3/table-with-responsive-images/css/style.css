@@ -1,0 +1,24 @@
+/* Einfügen in die css-Datei */
+
+/* Responsive Image */
+img {
+ height: auto;
+ max-width: 100%;
+}
+
+.image-table {
+ border: 0px solid rgba(0, 0, 0, 0);
+ border-collapse: separate;
+ border-spacing: 6px;
+ table-layout: fixed;
+ text-align: center;
+ width: 100%;
+}
+
+/* OPTIONAL - Bild mit Rahmen */
+.image-table img {
+ border: 10px solid #fff;
+ box-sizing: border-box;
+ -webkit-box-shadow: 0 0 10px #999;
+ box-shadow: 0 0 10px #999;
+}

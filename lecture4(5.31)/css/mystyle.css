@@ -1,0 +1,11 @@
+/* mystyle.css */
+body {
+  background-color: rgb(250, 240, 230);
+  color: blueviolet;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+h3 {
+  text-align: center;
+  color: darkred;
+}

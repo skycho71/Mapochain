@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive iframe YouTube video embed</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="responsive-iframe-content">
+  <div class="responsive-iframe-container">
+      <img class="img-responsive" src="img/poster.jpg">
+      <iframe src="https://www.youtube.com/embed/ZLL6du--lQA?modestbranding=1&controls=0&showinfo=0&title=0&rel=0&autoplay=1&mute=1&loop=1&playlist=ZLL6du--lQA&vq=hd1080" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+<div class="content">
+  <h3>Things to remember:</h3>
+  <ul>
+    <li>Videos must be muted for autoplay to work.</li>
+    <li>This will negatively affect your page's speed and performance. This exact demo page alone tested on PageSpeed Insights scores 43 on mobile and 95 on Desktop.</li>
+    <li>To loop endlessly the video must be in a playlist.</li>
+    <li>To put a single video in a playlist, reference the video id as the non-existant playlist id and it will just work.</li>
+    <li>There may be a flash of YouTube titles on load but they will vanish after a second or two of playback.</li>
+  </ul>
+</div>
+<div class="responsive-iframe-content">
+  <div class="responsive-iframe-container">
+      <img class="img-responsive" src="img/poster.jpg">
+      <iframe src="https://www.youtube.com/embed/qRLCwKosN_c?modestbranding=1&controls=0&showinfo=0&title=0&rel=0&autoplay=1&mute=1&loop=1&vq=hd1080" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

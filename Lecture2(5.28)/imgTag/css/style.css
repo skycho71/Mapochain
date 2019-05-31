@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #252525;
+  color: #fff;
+}
+
+.img--back {
+  display: block;
+  position: relative;
+  margin: 2.5vw;
+  width: 19vw;
+  height: 19vw;
+  float: left;
+  border-radius: 100%;
+  cursor: pointer;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8) inset, 0px 0px 1px rgba(255, 255, 255, 0.3);
+  background-size: auto 150% !important;
+  transition: all 180ms ease-out;
+}
+.img--back:hover {
+  transform: scale(1.1);
+  background-size: auto 100% !important;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.9) inset, 0px 0px 1px rgba(255, 255, 255, 0.5);
+  transition: all 180ms ease-in;
+}
+.img--back.portrait {
+  background-size: auto 200% !important;
+}
+.img--back.portrait:hover {
+  background-size: auto 150% !important;
+}
+.img--back > img {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}

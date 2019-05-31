@@ -1,0 +1,398 @@
+﻿Microsoft Windows [Version 10.0.17763.503]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\skych>cd\apps\gitTest
+
+C:\apps\gitTest>dit
+'dit'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+C:\apps\gitTest>dir
+ C 드라이브의 볼륨: Acer
+ 볼륨 일련 번호: 22F0-F96F
+
+ C:\apps\gitTest 디렉터리
+
+2019-05-30  오후 02:34    <DIR>          .
+2019-05-30  오후 02:34    <DIR>          ..
+2019-05-28  오후 03:54                49 1.txt
+2019-05-29  오후 02:46    <DIR>          Mapo
+2019-05-30  오후 02:34    <DIR>          mapolecture
+2019-05-28  오후 04:19                11 README.md
+               2개 파일                  60 바이트
+               4개 디렉터리  157,124,222,976 바이트 남음
+
+C:\apps\gitTest>git add .
+warning: adding embedded git repository: Mapo
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> Mapo
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached Mapo
+hint:
+hint: See "git help submodule" for more information.
+warning: adding embedded git repository: mapolecture
+
+C:\apps\gitTest>git rm --cached Mapo
+error: the following file has staged content different from both the
+file and the HEAD:
+    Mapo
+(use -f to force removal)
+
+C:\apps\gitTest>dir
+ C 드라이브의 볼륨: Acer
+ 볼륨 일련 번호: 22F0-F96F
+
+ C:\apps\gitTest 디렉터리
+
+2019-05-30  오후 02:34    <DIR>          .
+2019-05-30  오후 02:34    <DIR>          ..
+2019-05-28  오후 03:54                49 1.txt
+2019-05-29  오후 02:46    <DIR>          Mapo
+2019-05-30  오후 02:34    <DIR>          mapolecture
+2019-05-28  오후 04:19                11 README.md
+               2개 파일                  60 바이트
+               4개 디렉터리  157,124,149,248 바이트 남음
+
+C:\apps\gitTest>cd Mapo
+
+C:\apps\gitTest\Mapo>dir
+ C 드라이브의 볼륨: Acer
+ 볼륨 일련 번호: 22F0-F96F
+
+ C:\apps\gitTest\Mapo 디렉터리
+
+2019-05-29  오후 02:46    <DIR>          .
+2019-05-29  오후 02:46    <DIR>          ..
+2019-05-28  오후 05:14                49 1.txt
+2019-05-29  오후 02:46               142 20190529.code-workspace
+2019-05-29  오후 02:45               274 index.html
+2019-05-28  오후 05:14                11 README.md
+               4개 파일                 476 바이트
+               2개 디렉터리  157,123,751,936 바이트 남음
+
+C:\apps\gitTest\Mapo>git add .
+warning: LF will be replaced by CRLF in 20190529.code-workspace.
+The file will have its original line endings in your working directory
+
+C:\apps\gitTest\Mapo>git commit -m "20190530"
+[master 42f4704] 20190530
+ 66 files changed, 1953 insertions(+)
+ create mode 100644 20190529.code-workspace
+ create mode 100644 index.html
+ create mode 100644 lecture3/1-1.html
+ create mode 100644 lecture3/1-2.html
+ create mode 100644 lecture3/1-3.html
+ create mode 100644 lecture3/1-4.html
+ create mode 100644 lecture3/1-5.html
+ create mode 100644 lecture3/2-12.html
+ create mode 100644 lecture3/2-13.html
+ create mode 100644 lecture3/2-14.html
+ create mode 100644 lecture3/2-15.html
+ create mode 100644 lecture3/2-16.html
+ create mode 100644 lecture3/2-17.html
+ create mode 100644 lecture3/2-18.html
+ create mode 100644 lecture3/2-20.html
+ create mode 100644 lecture3/2-21.html
+ create mode 100644 lecture3/2-22.html
+ create mode 100644 lecture3/2-23.html
+ create mode 100644 lecture3/2-24.html
+ create mode 100644 lecture3/2-25.html
+ create mode 100644 lecture3/2-26.html
+ create mode 100644 lecture3/aTag/index.html
+ create mode 100644 lecture3/aTag/responsive-menu/README.txt
+ create mode 100644 lecture3/aTag/responsive-menu/css/style.css
+ create mode 100644 lecture3/aTag/responsive-menu/index.html
+ create mode 100644 lecture3/aTag/responsive-menu/license.txt
+ create mode 100644 lecture3/iframe/README.txt
+ create mode 100644 lecture3/iframe/css/style.css
+ create mode 100644 lecture3/iframe/ex-24-sitelist.html
+ create mode 100644 lecture3/iframe/index.html
+ create mode 100644 lecture3/iframe/license.txt
+ create mode 100644 lecture3/iframe/responsive-iframe-youtube-video-embed/README.txt
+ create mode 100644 lecture3/iframe/responsive-iframe-youtube-video-embed/css/style.css
+ create mode 100644 lecture3/iframe/responsive-iframe-youtube-video-embed/index.html
+ create mode 100644 lecture3/iframe/responsive-iframe-youtube-video-embed/js/index.js
+ create mode 100644 lecture3/iframe/responsive-iframe-youtube-video-embed/license.txt
+ create mode 100644 lecture3/iframe/responsive-iframe-youtube-video-embed/scss/style.scss
+ create mode 100644 lecture3/iframe/test.html
+ create mode 100644 lecture3/imgTag/css/style.css
+ create mode 100644 lecture3/imgTag/index.html
+ create mode 100644 lecture3/imgTag/js/index.js
+ create mode 100644 lecture3/imgTag/scss/style.scss
+ create mode 100644 lecture3/leftframe.html
+ create mode 100644 lecture3/media/EmbraceableYou.mp3
+ create mode 100644 lecture3/media/apple.jpg
+ create mode 100644 lecture3/media/banana.jpg
+ create mode 100644 lecture3/media/img_brand_jtbc.png
+ create mode 100644 lecture3/media/logo_et.png
+ create mode 100644 lecture3/media/mango.png
+ create mode 100644 lecture3/metadatasample.html
+ create mode 100644 lecture3/oluldlTag/README.txt
+ create mode 100644 lecture3/oluldlTag/css/style.css
+ create mode 100644 lecture3/oluldlTag/index.html
+ create mode 100644 lecture3/oluldlTag/js/index.js
+ create mode 100644 lecture3/oluldlTag/license.txt
+ create mode 100644 lecture3/oluldlTag/scss/style.scss
+ create mode 100644 lecture3/oluldlTag/ul/README.txt
+ create mode 100644 lecture3/oluldlTag/ul/css/style.css
+ create mode 100644 lecture3/oluldlTag/ul/index.html
+ create mode 100644 lecture3/oluldlTag/ul/license.txt
+ create mode 100644 lecture3/rightframe.html
+ create mode 100644 lecture3/table-with-responsive-images/README.txt
+ create mode 100644 lecture3/table-with-responsive-images/css/style.css
+ create mode 100644 lecture3/table-with-responsive-images/index.html
+ create mode 100644 lecture3/table-with-responsive-images/js/index.js
+ create mode 100644 lecture3/table-with-responsive-images/license.txt
+
+C:\apps\gitTest\Mapo>git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+C:\apps\gitTest\Mapo>git help -a
+See 'git help <command>' to read about a specific subcommand
+
+Main Porcelain Commands
+   add                  Add file contents to the index
+   am                   Apply a series of patches from a mailbox
+   archive              Create an archive of files from a named tree
+   bisect               Use binary search to find the commit that introduced a bug
+   branch               List, create, or delete branches
+   bundle               Move objects and refs by archive
+   checkout             Switch branches or restore working tree files
+   cherry-pick          Apply the changes introduced by some existing commits
+   citool               Graphical alternative to git-commit
+   clean                Remove untracked files from the working tree
+   clone                Clone a repository into a new directory
+   commit               Record changes to the repository
+   commit               Record changes to the repository
+   describe             Give an object a human readable name based on an available ref
+   diff                 Show changes between commits, commit and working tree, etc
+   fetch                Download objects and refs from another repository
+   format-patch         Prepare patches for e-mail submission
+   gc                   Cleanup unnecessary files and optimize the local repository
+   gitk                 The Git repository browser
+   grep                 Print lines matching a pattern
+   gui                  A portable graphical interface to Git
+   init                 Create an empty Git repository or reinitialize an existing one
+   log                  Show commit logs
+   merge                Join two or more development histories together
+   mv                   Move or rename a file, a directory, or a symlink
+   notes                Add or inspect object notes
+   pull                 Fetch from and integrate with another repository or a local branch
+   push                 Update remote refs along with associated objects
+   range-diff           Compare two commit ranges (e.g. two versions of a branch)
+   rebase               Reapply commits on top of another base tip
+   reset                Reset current HEAD to the specified state
+   revert               Revert some existing commits
+   rm                   Remove files from the working tree and from the index
+   shortlog             Summarize 'git log' output
+   show                 Show various types of objects
+   stash                Stash the changes in a dirty working directory away
+   status               Show the working tree status
+   submodule            Initialize, update or inspect submodules
+   tag                  Create, list, delete or verify a tag object signed with GPG
+   worktree             Manage multiple working trees
+
+
+See 'git help <command>' to read about a specific subcommand
+
+Main Porcelain Commands
+   add                  Add file contents to the index
+   am                   Apply a series of patches from a mailbox
+   archive              Create an archive of files from a named tree
+   bisect               Use binary search to find the commit that introduced a bug
+   branch               List, create, or delete branches
+   bundle               Move objects and refs by archive
+   checkout             Switch branches or restore working tree files
+   cherry-pick          Apply the changes introduced by some existing commits
+   citool               Graphical alternative to git-commit
+   clean                Remove untracked files from the working tree
+   clone                Clone a repository into a new directory
+   commit               Record changes to the repository
+   describe             Give an object a human readable name based on an available ref
+   diff                 Show changes between commits, commit and working tree, etc
+   fetch                Download objects and refs from another repository
+   format-patch         Prepare patches for e-mail submission
+   gc                   Cleanup unnecessary files and optimize the local repository
+   gitk                 The Git repository browser
+   grep                 Print lines matching a pattern
+   gui                  A portable graphical interface to Git
+   init                 Create an empty Git repository or reinitialize an existing one
+   log                  Show commit logs
+   merge                Join two or more development histories together
+   mv                   Move or rename a file, a directory, or a symlink
+   notes                Add or inspect object notes
+   pull                 Fetch from and integrate with another repository or a local branch
+
+C:\apps\gitTest\Mapo>git push -u origin master
+To https://github.com/skycho71/Mapo.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/skycho71/Mapo.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\apps\gitTest\Mapo>echo "# Mapochain" >> README.md
+
+C:\apps\gitTest\Mapo>git init
+Initialized empty Git repository in C:/apps/gitTest/Mapo/.git/
+
+C:\apps\gitTest\Mapo>git add README.md
+
+C:\apps\gitTest\Mapo>git commit -m "first commit"
+[master (root-commit) 973b4d7] first commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+
+C:\apps\gitTest\Mapo>git remote add origin https://github.com/skycho71/Mapochain.git
+
+C:\apps\gitTest\Mapo>git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 229 bytes | 114.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/skycho71/Mapochain.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\apps\gitTest\Mapo>
+C:\apps\gitTest\Mapo>git add .
+warning: LF will be replaced by CRLF in 20190529.code-workspace.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in h.
+The file will have its original line endings in your working directory
+
+C:\apps\gitTest\Mapo>git commit -m "20190530"
+[master 6c74922] 20190530
+ 68 files changed, 2112 insertions(+)
+ create mode 100644 1.txt
+ create mode 100644 20190529.code-workspace
+ create mode 100644 h
+ create mode 100644 index.html
+ create mode 100644 lecture3/1-1.html
+ create mode 100644 lecture3/1-2.html
+ create mode 100644 lecture3/1-3.html
+ create mode 100644 lecture3/1-4.html
+ create mode 100644 lecture3/1-5.html
+ create mode 100644 lecture3/2-12.html
+ create mode 100644 lecture3/2-13.html
+ create mode 100644 lecture3/2-14.html
+ create mode 100644 lecture3/2-15.html
+ create mode 100644 lecture3/2-16.html
+ create mode 100644 lecture3/2-17.html
+ create mode 100644 lecture3/2-18.html
+ create mode 100644 lecture3/2-20.html
+ create mode 100644 lecture3/2-21.html
+ create mode 100644 lecture3/2-22.html
+ create mode 100644 lecture3/2-23.html
+ create mode 100644 lecture3/2-24.html
+ create mode 100644 lecture3/2-25.html
+ create mode 100644 lecture3/2-26.html
+ create mode 100644 lecture3/aTag/index.html
+ create mode 100644 lecture3/aTag/responsive-menu/README.txt
+ create mode 100644 lecture3/aTag/responsive-menu/css/style.css
+ create mode 100644 lecture3/aTag/responsive-menu/index.html
+ create mode 100644 lecture3/aTag/responsive-menu/license.txt
+ create mode 100644 lecture3/iframe/README.txt
+ create mode 100644 lecture3/iframe/css/style.css
+ create mode 100644 lecture3/iframe/ex-24-sitelist.html
+ create mode 100644 lecture3/iframe/index.html
+ create mode 100644 lecture3/iframe/license.txt
+ create mode 100644 lecture3/iframe/responsive-iframe-youtube-video-embed/README.txt
+ create mode 100644 lecture3/iframe/responsive-iframe-youtube-video-embed/css/style.css
+ create mode 100644 lecture3/iframe/responsive-iframe-youtube-video-embed/index.html
+ create mode 100644 lecture3/iframe/responsive-iframe-youtube-video-embed/js/index.js
+ create mode 100644 lecture3/iframe/responsive-iframe-youtube-video-embed/license.txt
+ create mode 100644 lecture3/iframe/responsive-iframe-youtube-video-embed/scss/style.scss
+ create mode 100644 lecture3/iframe/test.html
+ create mode 100644 lecture3/imgTag/css/style.css
+ create mode 100644 lecture3/imgTag/index.html
+ create mode 100644 lecture3/imgTag/js/index.js
+ create mode 100644 lecture3/imgTag/scss/style.scss
+ create mode 100644 lecture3/leftframe.html
+ create mode 100644 lecture3/media/EmbraceableYou.mp3
+ create mode 100644 lecture3/media/apple.jpg
+ create mode 100644 lecture3/media/banana.jpg
+ create mode 100644 lecture3/media/img_brand_jtbc.png
+ create mode 100644 lecture3/media/logo_et.png
+ create mode 100644 lecture3/media/mango.png
+ create mode 100644 lecture3/metadatasample.html
+ create mode 100644 lecture3/oluldlTag/README.txt
+ create mode 100644 lecture3/oluldlTag/css/style.css
+ create mode 100644 lecture3/oluldlTag/index.html
+ create mode 100644 lecture3/oluldlTag/js/index.js
+ create mode 100644 lecture3/oluldlTag/license.txt
+ create mode 100644 lecture3/oluldlTag/scss/style.scss
+ create mode 100644 lecture3/oluldlTag/ul/README.txt
+ create mode 100644 lecture3/oluldlTag/ul/css/style.css
+ create mode 100644 lecture3/oluldlTag/ul/index.html
+ create mode 100644 lecture3/oluldlTag/ul/license.txt
+ create mode 100644 lecture3/rightframe.html
+ create mode 100644 lecture3/table-with-responsive-images/README.txt
+ create mode 100644 lecture3/table-with-responsive-images/css/style.css
+ create mode 100644 lecture3/table-with-responsive-images/index.html
+ create mode 100644 lecture3/table-with-responsive-images/js/index.js
+ create mode 100644 lecture3/table-with-responsive-images/license.txt
+
+C:\apps\gitTest\Mapo>git push -u origin master
+Enumerating objects: 95, done.
+Counting objects: 100% (95/95), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (78/78), done.
+Writing objects: 100% (94/94), 6.38 MiB | 2.06 MiB/s, done.
+Total 94 (delta 8), reused 0 (delta 0)
+remote: Resolving deltas: 100% (8/8), done.
+To https://github.com/skycho71/Mapochain.git
+   973b4d7..6c74922  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\apps\gitTest\Mapo>

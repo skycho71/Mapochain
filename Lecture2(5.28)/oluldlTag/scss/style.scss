@@ -1,0 +1,39 @@
+ol {
+  counter-reset: awesome-counter; // Set up a counter
+
+  li {
+    margin-bottom: .5em;
+    overflow: hidden; // Hide the default ol li numbers
+
+    &:before {
+      // Add our counter
+      content: counter(awesome-counter);
+      counter-increment: awesome-counter;
+
+      // Awesome CSS
+      font-size: 2em;
+      margin-right: .5em;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    
+    &:nth-child(1):before {
+      transform: rotate(-5deg);
+      font-size: 3em;
+      color: #9b59b6;
+      text-shadow: 1px 1px 0 #fff, 2px 2px 0 #9b59b6;
+    }
+    &:nth-child(2):before {
+      transform: rotate(10deg);
+      font-size: 2em;
+      color: #3498db;
+      text-shadow: 1px 1px 0 #fff, 2px 2px 0 #3498db;
+    }
+    &:nth-child(3):before {
+      transform: rotate(-20deg);
+      font-size: 5em;
+      color: #27ae60;
+      text-shadow: 1px 1px 0 #fff, 2px 2px 0 #27ae60;
+    }    
+  }
+}

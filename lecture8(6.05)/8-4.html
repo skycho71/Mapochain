@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>innerHTML 활용</title>
+<title>this 활용</title>
 <script>
-function change() {
-	var p = document.getElementById("firstP");
-	p.innerHTML= "나의 <img src='puppy.png'> 강아지";
+function change(obj, size, color) {
+	obj.style.color = color;
+	obj.style.fontSize = size;
 }
 </script>
 </head>
 <body>
-<h3>innerHTML 활용 : 아래 글자에 클릭하면
- 예쁜 강아지가 보입니다.</h3>
+<h3>this 활용</h3>
 <hr>
-<p id="firstP" style="color:blue" 
-	onclick="change()">
-	여기에	<span style="color:red">클릭하세요</span>
-</p>
+<button onclick="change(this, '30px', 'red')">버튼</button>
+<button onclick="change(this, '30px', 'blue')">버튼</button>
+<div onclick="change(this, '25px', 'orange')">
+	여기 클릭하면 크기와 색 변경
+</div>
 </body>
 </html>

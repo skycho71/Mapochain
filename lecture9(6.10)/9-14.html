@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>onload로 이미지 크기 출력</title>
+    <script type="text/javascript" src="./js/myJs.js"></script>
+  </head>
+  <body onload="changeImage()">
+    <h3>onload로 이미지 크기 출력</h3>
+    <hr />
+    <form>
+      <select id="sel" onchange="changeImage()">
+        <option value="media/apple.png">사과 </option
+        ><option value="media/banana.png">바나나 </option
+        ><option value="media/mango.png">망고 </option></select>
+
+      <span id="mySpan">이미지 크기</span>
+    </form>
+    <p><img id="myImg" src="media/apple.png" alt="." /></p>
+  </body>
+</html>
